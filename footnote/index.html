@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	/* 顶部边框的裁剪效果，用来模拟传统的脚注 */
+	div {
+		border-top: .2em solid transparent;
+		border-image: 100% 0 0 linear-gradient(90deg,
+								currentColor 4em,
+								transparent 0);
+		padding-top: 1em;
+	}
+</style>
+<body>
+	<div>This is a footnote.</div>
+</body>
+</html>

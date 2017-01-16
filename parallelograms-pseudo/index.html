@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	/* 菱形 变形一个元素而不改变内容 */
+	.button {
+		position: relative;
+		width: 8em;
+		height: 2em;
+		font-size: 2em;
+		color: #fff;
+		text-align: center;
+		line-height: 2em;
+		margin: 0 auto;
+	}
+	.button::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		z-index: -1;
+		background: #58a;
+		transform: skew(-45deg);
+	}
+</style>
+<body>
+	<div class="button">CLICK ME</div>
+</body>
+</html>

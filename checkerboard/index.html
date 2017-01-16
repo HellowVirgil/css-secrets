@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+</head>
+<style>
+	/* 灰色棋盘图案背景，一般用于表示透明色 */
+	div {
+		height: 200px;
+		background: #eee;
+		background-image: 
+			linear-gradient(45deg,
+				rgba(0, 0, 0, .25) 25%, transparent 0,
+				transparent 75%, rgba(0, 0, 0, .25) 0),
+			linear-gradient(45deg,
+				rgba(0, 0, 0, .25) 25%, transparent 0,
+				transparent 75%, rgba(0, 0, 0, .25) 0);
+		background-position: 0 0, 15px 15px;
+		background-size: 30px 30px;
+	}
+</style>
+<body>
+	<div></div>
+</body>
+</html>
